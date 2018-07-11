@@ -1,0 +1,7 @@
+<view class="container">
+  {{message}}
+  <view wx:for="{{array}}">{{item}}</view>
+  <text wx:if="{{view=='webview'}}">webview</text>
+  <text wx:elif="{{view=='app'}}">app</text>
+  <button bindtap='switch'>show{{view=='webview'?'app':'webview'}}</button>
+</view>

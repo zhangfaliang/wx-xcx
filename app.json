@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/selfcomponents/selfcomponent",
+    "pages/selfcomponents/index",
     "pages/modulArety/index",
     "pages/router/router",
     "pages/index/index",
