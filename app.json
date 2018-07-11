@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/binddata/index",
     "pages/selfcomponents/selfcomponent",
     "pages/selfcomponents/index",
     "pages/modulArety/index",
