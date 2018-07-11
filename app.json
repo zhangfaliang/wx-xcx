@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/modulArety/index",
     "pages/router/router",
     "pages/index/index",
     "pages/logs/logs"

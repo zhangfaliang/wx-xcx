@@ -1,0 +1,5 @@
+<view class="container">
+  <text>模块化</text>
+  <text bindtap="helloMINA">{{helloText}}</text>
+  <text bindtap="goodbayMINA">{{goodbayText}}</text>
+</view>
