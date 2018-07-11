@@ -4,11 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    motto: `的广泛地`,
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
+    motto: `吃鸡宝典`,
+    latitude:'',
+    longitude:'',
+    text:'text',
+    num:888,
+    array:[{text:'arr-text'}],
+    object:{
+      text:'object text'
+    }
+      },
   //上拉
   onPullDownRefresh:()=>{
     console.log('onPullDownRefresh')
@@ -23,50 +28,63 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '分享乐趣',
-      path: '/page/user?id=123'
+      title: '吃鸡',
+      path: 'index/index'
     }
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  clickMe:function(){
+    wx.getLocation({
+      type: 'wgs84',
+      success: (res) => {
+        var latitude = res.latitude // 经度
+        var longitude = res.longitude // 纬度
+        console.log(latitude, longitude)
+        this.setData({
+          latitude: latitude,
+          longitude: longitude
+
+        })
+      }
+    })
+    this.setData({
+      motto: '大吉大利，今晚吃鸡',
     })
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    console.log('onLoad',arguments)
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  onShow: function () {
+    console.log("onShow",arguments)
+  },
+  onShareAppMessage: function () {
+      return{
+        title:'吃鸡宝典',
+        path:'pages/index/index'
+      }
+  },
+  changeText:function (){
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      text:'changeText'
+    })
+  },
+  changeNum:function(){
+    this.setData({
+      num:666666
+    })
+  },
+  changeItemArray:function(){
+    this.setData({
+      'array[0].text':'change arr 0 text'
+    })
+  },
+  changeItemObject:function(){
+    this.setData({
+      'object.text': 'change object text'
     })
   }
 })
+// 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。
+// 仅支持设置可 JSON 化的数据。
+// 单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据。
+// 请不要把 data 中任何一项的 value 设为 undefined ，否则这一项将不被设置并可能遗留一些潜在问题。

@@ -2,5 +2,14 @@
 <view class="container">
   <view class="list">
     <text class="user-motto">{{motto}}</text>
+    <text bindtap="clickMe">点击我</text>
   </view>
+  <view>{{text}}</view>
+  <button bindtap ="changeText">change normal data</button>
+  <view>{{num}}</view>
+  <button bindtap="changeNum">changeNum</button>
+  <view>{{array[0].text}}</view>
+  <button bindtap="changeItemArray">change Array data</button>
+  <view>{{object.text}}</view>
+  <button bindtap="changeItemObject">change Object data</button>
 </view>

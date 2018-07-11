@@ -17,5 +17,19 @@
     "request": 10000,
     "downloadFile": 10000
   },
+  "tabBar":{
+    "color":"red",
+    "selectedColor":"blue",
+    "backgroundColor":"yelow",
+   "list":[
+     {
+       "text":"热点",
+       "pagePath":"pages/index/index"
+     },
+     {
+       "text": "评论",
+       "pagePath": "pages/logs/logs"
+       }] 
+  },
   "debug": true
 }
