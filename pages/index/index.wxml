@@ -5,7 +5,10 @@
     <text bindtap="clickMe">点击我</text>
   </view>
   <view>{{text}}</view>
-  <button bindtap ="changeText">change normal data</button>
+  <navigator open-type="redirectTo" url="/pages/router/router">redirectTo</navigator>
+  <navigator open-type="navigateTo" url="/pages/router/router"> navigateTo</navigator>
+  <navigator open-type="navigateBack" url="/pages/router/router"> back</navigator>
+  <navigator open-type="reLaunch" url="/pages/router/router"> reLaunch</navigator>
   <view>{{num}}</view>
   <button bindtap="changeNum">changeNum</button>
   <view>{{array[0].text}}</view>

@@ -1,0 +1,4 @@
+<view class="container">
+<text>{{routerText}}</text>
+  <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+</view>
