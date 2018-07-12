@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/list-render/index",
     "pages/binddata/index",
     "pages/selfcomponents/selfcomponent",
     "pages/selfcomponents/index",
