@@ -11,4 +11,17 @@
       </view>
     </view>
   </view>
+  <view id="outer" bind:touchstart="touchstart1" capture-bind:touchstart="capture1">
+    outer view
+    <view id="inner" bind:touchstart="touchstart2" capture-bind:touchstart="captuer2" >
+      inner view
+    </view>
+  </view>
+
+    <view id="outer" bind:touchstart="touchstart1" capture-catch:touchstart="capture1">
+    outer view
+    <view id="inner" bind:touchstart="touchstart2" capture-catch:touchstart="captuer2" >
+      inner view
+    </view>
+  </view>
 </view>
