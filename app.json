@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/import/index",
     "pages/event/index",
     "pages/template-render/index",
     "pages/if-render/index",

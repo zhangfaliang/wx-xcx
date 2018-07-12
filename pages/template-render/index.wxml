@@ -17,3 +17,4 @@
     <template is="{{item%2==0?'even':'odd'}}"></template>
   </block>
 </view>
+
