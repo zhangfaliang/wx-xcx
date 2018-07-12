@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/event/index",
     "pages/template-render/index",
     "pages/if-render/index",
     "pages/list-render/index",
