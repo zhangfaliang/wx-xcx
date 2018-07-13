@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/wxs/index",
     "pages/import/index",
     "pages/event/index",
     "pages/template-render/index",
