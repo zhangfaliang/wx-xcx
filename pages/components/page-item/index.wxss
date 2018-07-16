@@ -1,0 +1,33 @@
+.item{
+  color: #333;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:20px;
+  height: 60px;
+  padding: 10px 0;
+  border-bottom:1px solid #ccc;
+}
+.img{
+  height: 60px;
+  width: 80px;
+}
+.left{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+}
+.title{
+  height: 40px;
+  font-size: 17px;
+}
+.detail{
+  height: 20px;
+  flex: 1;
+}
