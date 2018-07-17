@@ -1,0 +1,5 @@
+.detail{
+  font-size: 14px;
+  height: 100%;
+  padding: 5px 20px;
+}

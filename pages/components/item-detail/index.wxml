@@ -1,0 +1,3 @@
+<view wx:for="{{array}}"  wx:key="{{item.index}}" class="detail">
+   {{item}}
+</view>
