@@ -1,10 +1,9 @@
-
-<view class="item">
-  <image src="../../../static/img/header.jpg" class="img"></image>
-  <view class="left">
-    <view class="title">新手吃鸡必看 绝地求生大逃杀53条生存指南</view>
-    <view class="detail">
-   
+<view >
+  <navigator  class="item" url="/pages/components/item-detail/index" open-type="reLaunch">
+    <image src="../../../static/img/header.jpg" class="img"></image>
+    <view class="left">
+      <view class="title">新手吃鸡必看 绝地求生大逃杀53条生存指南</view>
+      <view class="detail"></view>
     </view>
-  </view>
+  </navigator>
 </view>

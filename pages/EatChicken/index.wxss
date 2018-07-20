@@ -1,0 +1,18 @@
+.wrap{
+  padding:0;
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}

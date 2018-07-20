@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="list">
     <text class="user-motto">{{motto}}</text>
@@ -6,13 +6,18 @@
   </view>
   <view>{{text}}</view>
   <navigator open-type="redirectTo" url="/pages/router/router">redirectTo</navigator>
-  <navigator open-type="navigateTo" url="/pages/router/router"> navigateTo</navigator>
-  <navigator open-type="navigateBack" url="/pages/router/router"> back</navigator>
-  <navigator open-type="reLaunch" url="/pages/router/router"> reLaunch</navigator>
+  <navigator open-type="navigateTo" url="/pages/router/router">navigateTo</navigator>
+  <navigator open-type="navigateBack" url="/pages/router/router">back</navigator>
+  <navigator open-type="reLaunch" url="/pages/router/router">reLaunch</navigator>
   <view>{{num}}</view>
   <button bindtap="changeNum">changeNum</button>
   <view>{{array[0].text}}</view>
   <button bindtap="changeItemArray">change Array data</button>
   <view>{{object.text}}</view>
   <button bindtap="changeItemObject">change Object data</button>
+  <component-tag-name class="my-class" inner-text=" some text">
+    <view slot="after">在组件模板中可以提供一个 slot 节点，用于承载组件引用时提供的子节点。</view>
+    <view slot="before">before</view>
+
+  </component-tag-name>
 </view>

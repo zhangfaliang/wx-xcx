@@ -1,0 +1,7 @@
+<view class="container">
+  自定义组件
+  <view class="inner">{{innerText}}</view>
+  <slot name="before"></slot>
+    <view>这里是组件内部节点</view>
+  <slot name="after"></slot>
+</view>

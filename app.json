@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/EatChicken/index",
+    "pages/components/item-detail/index",
+    "pages/index/index",
+    "pages/selfComponent1.6/index",
     "pages/wxs/index",
     "pages/import/index",
     "pages/event/index",
@@ -11,7 +15,6 @@
     "pages/selfcomponents/index",
     "pages/modulArety/index",
     "pages/router/router",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -31,7 +34,7 @@
   "tabBar":{
     "color":"red",
     "selectedColor":"blue",
-    "backgroundColor":"yelow",
+    "backgroundColor":"yelow 45",
    "list":[
      {
        "text":"热点",

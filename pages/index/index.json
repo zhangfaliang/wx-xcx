@@ -3,5 +3,9 @@
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "吃鸡宝典",
   "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "light",
+  "usingComponents":{
+    "component-tag-name":"../selfComponent1.6/index"
+  }
+
 }
