@@ -1,3 +1,4 @@
-<view wx:for="{{array}}"  wx:key="{{item.index}}" class="detail">
-   {{item}}
+<view wx:for="{{pageData}}"  wx:key="{{item.index}}" class="detail">
+   {{item.content}}
+    <image wx:if="{{!!item.imgUrl}}" src="{{item.imgUrl}}" class="img"></image>
 </view>

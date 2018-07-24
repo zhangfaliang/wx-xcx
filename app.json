@@ -34,15 +34,15 @@
   "tabBar":{
     "color":"red",
     "selectedColor":"blue",
-    "backgroundColor":"yelow",
+    "backgroundColor":"yelow 3",
    "list":[
      {
        "text":"热点",
-       "pagePath":"pages/index/index"
+       "pagePath":"pages/index/index 1"
      },
      {
        "text": "评论",
-       "pagePath": "pages/logs/logs"
+       "pagePath": "pages/logs/logs 2"
        }] 
   },
   "debug": true
