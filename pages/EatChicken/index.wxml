@@ -7,10 +7,6 @@
     </block>
   </swiper>
   <list>
-    <item></item>
-    <item></item>
-    <item></item>
-    <item></item>
-    <item></item>
+    <item  wx:for="{{titleList}}" imgUrl="{{item.imgUrl}}" title ="{{item.title}}" idNum="{{item.idNum}}" wx:for-index="{{item.index}}"></item>
   </list>
 </view>

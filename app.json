@@ -1,12 +1,11 @@
 {
   "pages":[
     "pages/EatChicken/index",
-    "pages/components/item-detail/index",
+    "pages/item-detail/index",
     "pages/index/index",
     "pages/selfComponent1.6/index",
     "pages/wxs/index",
     "pages/import/index",
-    "pages/event/index",
     "pages/template-render/index",
     "pages/if-render/index",
     "pages/list-render/index",
@@ -25,25 +24,6 @@
     "backgroundColor":"#fff",
     "enablePullDownRefresh":true,
     "onReachBottomDistance":"50"
-  },
-
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "tabBar":{
-    "color":"red",
-    "selectedColor":"blue",
-    "backgroundColor":"yelow 3",
-   "list":[
-     {
-       "text":"热点",
-       "pagePath":"pages/index/index 1"
-     },
-     {
-       "text": "评论",
-       "pagePath": "pages/logs/logs 2"
-       }] 
   },
   "debug": true
 }
