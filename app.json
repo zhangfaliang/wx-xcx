@@ -17,13 +17,13 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"drak",
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
     "backgroundColor":"#fff",
     "enablePullDownRefresh":true,
-    "onReachBottomDistance":"50"
+    "onReachBottomDistance":50
   },
   "debug": true
 }

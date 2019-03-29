@@ -12,6 +12,7 @@
 	"appid": "wx19bf09a601016cfe",
 	"projectname": "吃鸡宝典",
 	"isGameTourist": false,
+	"setting": {},
 	"condition": {
 		"search": {
 			"current": -1,

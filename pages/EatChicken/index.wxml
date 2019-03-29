@@ -6,7 +6,11 @@
       </swiper-item>
     </block>
   </swiper>
-  <list>
-    <item  wx:for="{{titleList}}" imgUrl="{{item.imgUrl}}" title ="{{item.title}}" idNum="{{item.idNum}}" wx:for-index="{{item.index}}"></item>
-  </list>
+  <scroll-view scroll-y class="scroll-view" style="flex:1" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <list>
+      <item wx:for="{{titleList}}" imgUrl="{{item.imgUrl}}" title="{{item.title}}" idNum="{{item.idNum}}" wx:for-index="{{item.index}}"></item>
+    </list>
+  </scroll-view>
+  <video src="{{src}}"></video>
+  <button bindtap="bindButtonTap">获取视频</button>
 </view>

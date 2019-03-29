@@ -4,6 +4,6 @@
   "navigationBarTitleText": "返回",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
-  "navigationStyle":"back"
+  "navigationStyle":"custom"
 
 }
