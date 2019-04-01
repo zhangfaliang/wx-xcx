@@ -16,6 +16,7 @@
     "pages/modulArety/index",
     "pages/router/router",
     "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

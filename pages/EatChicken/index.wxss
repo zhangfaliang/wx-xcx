@@ -7,21 +7,28 @@
   padding:0;
   margin:0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: center;
   flex-direction: column;
   height: 100%;
   width: 100%;
 }
 .swiper {
-  height: 200rpx;
+  height: 300rpx;
   width: 100%;
 }
 .swiper image {
   height: 100%;
   width: 100%;
 }
-
+.video-swiper{
+  display: flex;
+  flex: 1;
+}
+.video-test3{
+  display: flex;
+  flex: 1;
+}
 .wrap .ad {
   width: 100%;
 }
@@ -31,4 +38,6 @@
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
+
+
 

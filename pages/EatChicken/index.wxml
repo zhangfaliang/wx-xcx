@@ -1,26 +1,21 @@
 <view class="wrap">
-  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-    <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{item.index}}">
+  <swiper class="video-swiper" circular="{{circular}}" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{videoList}}" wx:for-index="index" wx:key="{{item.index}}">
       <swiper-item>
-        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="true" interval="2000" duration="200">
+          <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{item.index}}">
+            <swiper-item>
+              <ad unit-id="adunit-4f50cb67110611d4"></ad>
+            </swiper-item>
+          </block>
+        </swiper>
+        <video-test4></video-test4>
       </swiper-item>
     </block>
   </swiper>
-  <scroll-view scroll-y class="scroll-view" style="flex:1" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <!-- <list>
+  <!-- <scroll-view scroll-y class="scroll-view" style="flex:1" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}"> -->
+  <!-- <list>
       <item wx:for="{{titleList}}" imgUrl="{{item.imgUrl}}" title="{{item.title}}" idNum="{{item.idNum}}" wx:for-index="{{item.index}}"></item>
     </list> -->
-    <!-- <video-list>
-      <video-item wx:for="{{videoList}}"
-       videoUrl="{{item.videoUrl}}" 
-       danmuList="{{item.danmuList}}" 
-       idNum="{{item.idNum}}" 
-       scrollTopNum="{{scrollTopNum}}"
-       wx:key="{{item.index}}"
-       flagNum="{{item.index}}"></video-item>
-    </video-list> -->
-  
-      <video-test4></video-test4>
-  </scroll-view>
-  <ad class="ad" unit-id="adunit-ba7839d107a44559"></ad>
+  <!-- </scroll-view> -->
 </view>
