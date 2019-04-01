@@ -2,6 +2,7 @@
   "pages": [
     "pages/EatChicken/index",
     "pages/item-detail/index",
+    "pages/video-detail/index",
     "pages/index/index",
     "pages/selfComponent1.6/index",
     "pages/wxs/index",

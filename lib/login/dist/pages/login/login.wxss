@@ -1,0 +1,12 @@
+@import "../../common/util/util.wxss";
+@import "../../components/form/form.wxss";
+@import "../../components/countrycode/countrycode.wxss";
+page {
+  color: #373C43;
+  background: #F8FAFC;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

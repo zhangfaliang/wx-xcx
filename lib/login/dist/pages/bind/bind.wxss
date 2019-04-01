@@ -1,0 +1,18 @@
+@import "../../common/util/util.wxss";
+@import "../../common/util/form.wxss";
+@import "../../components/countrycode/countrycode.wxss";
+.icon-arrow {
+  display: inline-block;
+  width: 8rpx;
+  height: 16rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAMAAAC+LeqSAAAAM1BMVEUAAACampqbm5uZmZmdnZ2ZmZmampqampqZmZmcnJyYmJiampqZmZmbm5uampqampqZmZmJpc+rAAAAEHRSTlMA+VfxOX3julAv8+3Vf29JlDQ2CAAAAEhJREFUKM/tyssNwCAMBFHsJAbydf/VRnBZaXEHMMenSTXnmrjbfdsZLw/09UiPpVDRSE9C7SuZNHxGE53GCgwZDBkMfWaF7QcW5gjuPu0e+wAAAABJRU5ErkJggg==");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bind .name {
+  flex: 1;
+  color: #222;
+}
+.bind .icon-arrow {
+  margin-top: 36rpx;
+}

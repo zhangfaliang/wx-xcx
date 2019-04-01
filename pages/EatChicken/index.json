@@ -1,7 +1,14 @@
 {
   "usingComponents":{
     "list":"../../components/index-list/index",
-    "item":"../../components/page-item/index"
+    "item":"../../components/page-item/index",
+    "video-list":"../../components/video-list/index",
+    "video-item":"../../components/video-item/index",
+    "video-test1":"../../components/video-test-1/index",
+    "video-test2":"../../components/video-test-2/index",
+    "video-test3":"../../components/video-test-3/index",
+    "video-test4":"../../components/video-test-4/index",
+    "video-test5":"../../components/video-test-5/index"
   },
 
   "networkTimeout": {

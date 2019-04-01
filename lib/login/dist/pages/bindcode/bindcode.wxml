@@ -1,0 +1,19 @@
+<form class="bind-code" bindsubmit="submit">
+    <view class="form-group-wrap">
+
+        <view class="form-group">
+            <label for="J_telphone" class="label">+<view>{{countryCode}}</view></label>
+            <view class="telphone">{{phone}}</view>
+            <input type="text" class="hide" name="countryCode" value="{{countryCode}}" />
+            <input type="text" class="hide" name="phone" value="{{phone}}" />
+        </view>
+
+        <view class="form-group">
+            <label for="J_code" class="label">验证码</label>
+            <input focus="true" id="J_code" class="input" type="number" placeholder-class="placeholder" name="vcode" placeholder="请输入验证码" />
+            <view class="{{sendMsgCodeClass}}" data-spider-action-name="sendMsgCode" bindtap="sendMsgCode">{{sendMsgCodeText}}</view>
+        </view>
+    </view>
+    <button formType="submit" class="btn">完成</button>
+</form>
+<include src="../../common/toast/index.wxml"/>

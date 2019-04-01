@@ -1,0 +1,6 @@
+<block wx:if="{{components.popup.ui.show}}">
+    <view class="popup-modal {{components.popup.ui.modalAnimateClassName}}" catchtap="hidePopup"></view>
+    <view class="popup {{components.popup.ui.className}} {{components.popup.ui.animateClassName}}">
+
+    </view>
+</block>

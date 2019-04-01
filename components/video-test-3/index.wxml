@@ -1,0 +1,10 @@
+<view class="video-img--wrap">
+    <video src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
+        <cover-view class="video_view--container" wx:if="{{!play}}">
+            <cover-image src="{{headVideoInfo.coverUrl}}" class="cover-image" mode="aspectFit"></cover-image>
+            <cover-view class="control--btn" catch:tap="controlVideo">
+                <cover-image src="https://si.geilicdn.com/img-4933000001685b263c400a20b7b9-unadjust_100_100.png"></cover-image>
+            </cover-view>
+        </cover-view>
+    </video>
+</view>

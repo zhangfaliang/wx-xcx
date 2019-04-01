@@ -1,0 +1,53 @@
+@import "../../common/util/util.wxss";
+@import "../../common/popup/index.wxss";
+.countrycode .seq {
+  line-height: 46rpx;
+  background-color: #E8EAEA;
+  color: #222;
+  font-size: 26rpx;
+  padding-left: 24rpx;
+}
+.countrycode .ul {
+  padding-left: 24rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+.countrycode .li {
+  display: flex;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ccc;
+  padding-right: 24rpx;
+}
+.countrycode .li .name {
+  flex: 1;
+}
+.countrycode .li:last-child {
+  border: none;
+}
+.countrycode-header {
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #222;
+  font-size: 30rpx;
+  background-color: #fcfcfc;
+}
+.countrycode-header .close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 104rpx;
+  background-image: url(http://si.geilicdn.com/hz_img_08fb0000015c48b0a1190a02685e_40_40_unadjust.png);
+  background-size: 40rpx;
+  background-repeat: no-repeat;
+  background-position: center 32rpx;
+}
+.countrycode-body {
+  height: 850rpx;
+}
+.popup {
+  height: 950rpx;
+}

@@ -1,0 +1,36 @@
+.clip-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.clip-text-2 {
+  -webkit-line-clamp: 2;
+}
+swiper .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 2rpx;
+}
+swiper .wx-swiper-dot {
+  width: 6rpx;
+  display: inline-flex;
+  height: 6rpx;
+  justify-content: space-between;
+}
+swiper .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  border-radius: 2rpx;
+}
+swiper .wx-swiper-dot-active {
+  width: 22rpx;
+  height: 6rpx;
+  border-radius: 2rpx;
+}
+swiper .wx-swiper-dot-active::before {
+  width: 22rpx;
+  height: 6rpx;
+  border-radius: 2rpx;
+}

@@ -1,0 +1,27 @@
+.toast {
+  position: fixed;
+  width: 100%;
+  top: 23%;
+  z-index: 100000;
+  text-align: center;
+}
+.toast .component-toast {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgba(17, 17, 17, 0.7);
+  border-radius: 15rpx;
+  padding: 40rpx 30rpx;
+  max-width: 60%;
+  min-width: 25%;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  opacity: 0;
+}
+.toast .component-toast.fadein {
+  opacity: 1;
+}
+.toast .text {
+  line-height: 40rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+}

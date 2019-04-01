@@ -1,0 +1,4 @@
+<view class="img--wrap video-img--ele" wx:for="{{videoList}}">
+    <image src="{{item}}" />
+    <image class="control-btn--image" src="https://si.geilicdn.com/img-4933000001685b263c400a20b7b9-unadjust_100_100.png"></image>
+</view>

@@ -1,0 +1,20 @@
+<block wx:if="{{components.popup.ui.show}}">
+    <view class="popup-modal {{components.popup.ui.modalAnimateClassName}}" catchtap="hidePopup" data-spider-action-name="hidePopup"></view>
+    <view class="popup {{components.popup.ui.className}} {{components.popup.ui.animateClassName}}">
+        <view class="countrycode-header">
+            选择国家/地区
+            <view class="close" bindtap="hidePopup" data-spider-action-name="hidePopup"></view>
+        </view>
+        <scroll-view class="countrycode-body" scroll-y="true">
+            <view class="countrycode" wx:key="a" wx:for="{{components.countrycode.countryCodeKeys}}">
+                <view class="seq">{{item}}</view>
+                <view class="ul">
+                    <view class="li" wx:key="a" wx:for="{{components.countrycode.countryCodes[item]}}" wx:for-item="countryCode" data-spider-action-name="choseCountrycode" bindtap="choseCountrycode" data-countryname="{{countryCode.n}}" data-countrycode="{{countryCode.c}}">
+                        <view class="name">{{countryCode.n}}</view>
+                        <view>+{{countryCode.c}}</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</block>

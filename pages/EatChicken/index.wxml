@@ -7,11 +7,20 @@
     </block>
   </swiper>
   <scroll-view scroll-y class="scroll-view" style="flex:1" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <list>
+    <!-- <list>
       <item wx:for="{{titleList}}" imgUrl="{{item.imgUrl}}" title="{{item.title}}" idNum="{{item.idNum}}" wx:for-index="{{item.index}}"></item>
-    </list>
-    <!-- <video src="https://d.pcs.baidu.com/file/3233554c13ed6b417aad0c797e261066?fid=2605574314-250528-919543991878169&rt=pr&sign=FDtAERVC-DCb740ccc5511e5e8fedcff06b081203-eDHXqjh4eSegxZkdZWhe0BHYJyE%3D&expires=8h&chkv=1&chkbd=1&chkpc=&dp-logid=2034465431634988552&dp-callid=0&dstime=1553850974&r=444262896&vip=0"></video> -->
-    <!-- https://d.pcs.baidu.com/file/15ad1b16c06965136491e2a927056f67?fid=2605574314-250528-543379013995029&rt=pr&sign=FDtAERVC-DCb740ccc5511e5e8fedcff06b081203-sKoMjXA2wutiXqazf34EHsEVT5o%3D&expires=8h&chkv=1&chkbd=1&chkpc=&dp-logid=2035206704598312912&dp-callid=0&dstime=1553853736&r=386628253&vip=0 -->
+    </list> -->
+    <!-- <video-list>
+      <video-item wx:for="{{videoList}}"
+       videoUrl="{{item.videoUrl}}" 
+       danmuList="{{item.danmuList}}" 
+       idNum="{{item.idNum}}" 
+       scrollTopNum="{{scrollTopNum}}"
+       wx:key="{{item.index}}"
+       flagNum="{{item.index}}"></video-item>
+    </video-list> -->
+  
+      <video-test4></video-test4>
   </scroll-view>
   <ad class="ad" unit-id="adunit-ba7839d107a44559"></ad>
 </view>

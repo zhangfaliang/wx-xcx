@@ -1,0 +1,19 @@
+.item{
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    border-bottom:1px solid #ccc;
+  }
+
+  .video{
+    height: 400px;  
+    width: 70%;
+  }
+  .text{
+    color: #333;
+    width: 20%;
+    height: 30px;
+    font-size: 30px;
+  }

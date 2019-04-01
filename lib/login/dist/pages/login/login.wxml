@@ -1,0 +1,14 @@
+
+
+<include src="../../common/toast/index.wxml"/>
+<include src="../../components/countrycode/countrycode.wxml"/>
+
+
+
+<!--<template is="tabs" data="{{...components.tabsControl}}"></template>
+<template is="msgItem" data="{{...components.item}}"/>-->
+
+<view>
+  <!--<tabs bindtabchange="onTabChange"></tabs>-->
+  <form type="{{type}}" redirectType="{{redirectType}}" redirect="{{redirect}}"></form>
+</view>

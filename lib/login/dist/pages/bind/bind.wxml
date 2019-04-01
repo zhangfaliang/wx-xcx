@@ -1,0 +1,20 @@
+<form class="bind" bindsubmit="submit">
+    <view class="form-group-wrap">
+        <view class="form-group" bindtap="selectCountryCode" data-spider-action-name="selectCountryCode">
+            <view class="label">国家/地区</view>
+            <view class="name">
+                {{countryName}}
+            </view>
+            <view class="icon-arrow"></view>
+            <input type="text" class="hide" name="countryCode" value="{{countryCode}}"/>
+        </view>
+
+        <view class="form-group">
+            <label for="J_phone" class="label">+{{countryCode}}</label>
+            <input focus="true" id="J_phone" name="phone" class="input" placeholder-class="placeholder" type="number" placeholder="请输入手机号"/>
+        </view>
+    </view>
+    <button class="btn" formType="submit">下一步</button>
+</form>
+<include src="../../common/toast/index.wxml"/>
+<include src="../../components/countrycode/countrycode.wxml"/>

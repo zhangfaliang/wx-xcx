@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"登录",
+  "usingComponents": {
+    "tabs": "../../components/tabs/tabs",
+    "form": "../../components/form/form"
+  }
+}

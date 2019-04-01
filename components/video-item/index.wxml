@@ -1,0 +1,12 @@
+<view class="item" bindtap="navigateToDetail">
+  <video  class="video" 
+  id="myVideo" 
+  src="{{videoUrl}}"
+  controls="true" 
+  autoplay="{{scrollTopNum>=idNum&&scrollTopNum<idNum+1}}"
+  event-model="bubble" 
+  objectFit="contain" 
+  />
+  <view class="text">{{scrollTopNum}}</view>
+
+</view>
