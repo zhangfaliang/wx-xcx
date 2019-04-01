@@ -3,13 +3,13 @@
     <block wx:for="{{videoList}}" wx:for-index="index" wx:key="{{item.index}}">
       <swiper-item>
         <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="true" interval="2000" duration="200">
-          <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{item.index}}">
+          <block wx:for="{{videoList}}" wx:for-index="index" wx:key="{{item.index}}">
             <swiper-item>
               <ad unit-id="adunit-4f50cb67110611d4"></ad>
             </swiper-item>
           </block>
         </swiper>
-        <video-test4></video-test4>
+        <video-test4 videoList="{{item.isPlayingArr}}"></video-test4>
       </swiper-item>
     </block>
   </swiper>

@@ -73,7 +73,8 @@
 }
 .video-img--wrap .video-img--ele {
   width: 100%;
-  height: 450rpx;
+  display: flex;
+  flex: 1;
   /* position: absolute; */
 }
 .video-img--wrap .img--wrap {

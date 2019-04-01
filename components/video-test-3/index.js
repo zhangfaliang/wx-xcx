@@ -14,12 +14,16 @@ Component({
         idx: {
             type: String,
         },
+        headVideoInfo: {
+            type: Object, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
+            value:{}, // 属性初始值（可选），如果未指定则会根据类型选择一个
+          },
     },
     data: {
-        headVideoInfo: {
-            coverUrl: 'https://si.geilicdn.com/open813142332-560300000167c1b76d220a217216_740_737.jpg?w=800&h=800&cp=1',
-            videoUrl: 'https://v.geilicdn.com/video/wdsgoods1397000013-731e00000168308294340a207825.mp4.f20.mp4',
-        },
+        // headVideoInfo: {
+        //     coverUrl: 'https://si.geilicdn.com/open813142332-560300000167c1b76d220a217216_740_737.jpg?w=800&h=800&cp=1',
+        //     videoUrl: 'https://v.geilicdn.com/video/wdsgoods1397000013-731e00000168308294340a207825.mp4.f20.mp4',
+        // },
         autoplay: false,
         controls: true,
         video: true,
