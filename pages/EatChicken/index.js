@@ -87,14 +87,30 @@ Page({
         ]
       }
     ],
-    scrollTopNum: 0,
+    hiddenflag: false,
     indicatorDots: false, // 角标按钮
     vertical: true, //竖向
     autoplay: false, //自动播放
     circular: true, // 衔接滑动
-    interval: 2000,
-    duration: 500,
-    previousMargin: 0,
-    nextMargin: 0
+    interval: 1000,
+    duration: 200,
+    previousMargin: 60,
+    nextMargin: 60
+  },
+  methods: {
+  bindchangefn: (e) => {
+    // this.setdata({
+    //   hiddenflag:false
+    // })
+    console.log(1)
+  },
+  bindanimationfinishfn: (e) => {
+    // this.setdata({
+    //   hiddenflag:true
+    // })
+    console.log(this,2)
+  },
+ 
   }
+  
 });

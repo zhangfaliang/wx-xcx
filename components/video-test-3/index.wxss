@@ -19,7 +19,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 990;
+  z-index: 2;
 }
 .video--wrap .control--btn {
   width: 100rpx;
@@ -28,7 +28,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 3;
 }
 .video_view--container {
   position: absolute;
@@ -45,7 +45,7 @@
   width: 250rpx;
   display: flex;
   justify-content: center;
-  z-index: 999;
+  z-index: 9;
 }
 .btns--wrap .btns_common {
   background: rgba(255, 255, 255, 0.8);
@@ -75,7 +75,7 @@
   width: 100%;
   display: flex;
   flex: 1;
-  /* position: absolute; */
+  position: absolute;
 }
 .video-img--wrap .img--wrap {
   transform: translateX(100%);
