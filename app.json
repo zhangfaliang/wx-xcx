@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/EatChicken/index",
     "pages/item-detail/index",
     "pages/index/index",
@@ -16,14 +16,15 @@
     "pages/router/router",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-    "backgroundColor":"#fff",
-    "enablePullDownRefresh":true,
-    "onReachBottomDistance":50
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

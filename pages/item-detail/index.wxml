@@ -2,3 +2,5 @@
    {{item.content}}
     <image wx:if="{{!!item.imgUrl}}" src="{{item.imgUrl}}" class="img"></image>
 </view>
+<ad unit-id="adunit-4f50cb67110611d4"></ad>
+
