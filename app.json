@@ -1,20 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/EatChicken/index",
     "pages/item-detail/index",
     "pages/video-detail/index",
-    "pages/index/index",
-    "pages/selfComponent1.6/index",
-    "pages/wxs/index",
-    "pages/import/index",
-    "pages/template-render/index",
-    "pages/if-render/index",
-    "pages/list-render/index",
-    "pages/binddata/index",
-    "pages/selfcomponents/selfcomponent",
-    "pages/selfcomponents/index",
-    "pages/modulArety/index",
-    "pages/router/router",
     "pages/logs/logs"
     
   ],

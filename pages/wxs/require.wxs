@@ -1,3 +1,0 @@
-var test = require('./index.wxs')
-
-console.log(test.foo);

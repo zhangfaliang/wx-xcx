@@ -1,6 +1,0 @@
-<import src="../template-render/index.wxml"></import>
-<view class="container">
- 引用
-  <text> A template</text>
-  <template is="odd" ></template>
-</view>

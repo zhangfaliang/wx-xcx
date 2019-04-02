@@ -1,8 +1,0 @@
-var foo = 'hello world from index.wxs';
-var bar = function (b) {
-  return d;
-}
-module.exports = {
-  foo: foo,
-  bar: bar,
-}
