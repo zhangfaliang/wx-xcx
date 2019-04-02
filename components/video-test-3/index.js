@@ -5,9 +5,13 @@ Component({
       value: false,
       observer(newVal) {
         if (newVal && newVal === true) {
-          this.videoPlay();
+          setTimeout(() => {
+            this.videoPlay();
+          }, 400);
         } else {
-          this.videoPause();
+          setTimeout(() => {
+            this.videoPause();
+          }, 400);
         }
       }
     },
@@ -35,10 +39,9 @@ Component({
       value: 0
     },
     current: {
-        type: Number,
-        value: 0
-      }
-      
+      type: Number,
+      value: 0
+    }
   },
   data: {
     // headVideoInfo: {
@@ -51,7 +54,7 @@ Component({
     play: false,
     left: false,
     fullScreen: false,
-    transformNumChangeFlag:false
+    transformNumChangeFlag: false
   },
 
   ready() {
@@ -64,11 +67,10 @@ Component({
       let videoContext = wx.createVideoContext("item-head-video", this);
       this.setData({
         videoContext,
-        transformNum:0,
-        transformNumChangeFlag:true,
-        autoplay:true
+        transformNum: 0,
+        transformNumChangeFlag: true,
+        autoplay: true
       });
-      
     },
 
     _selectedChange(newVal, oldVal) {
@@ -123,6 +125,6 @@ Component({
     handleVideoEnded() {
       const { idx } = this.data;
       this.triggerEvent("onpause", { index: idx });
-    },
+    }
   }
 });
