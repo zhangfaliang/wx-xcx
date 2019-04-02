@@ -96,10 +96,7 @@ button:last-child{
 .page-section-title{
   padding: 0;
 }
-.swiper-item{
-  display: block;
-  height: 150px;
-}
+
 .page-section-title{
   margin-top: 60rpx;
   position: relative;

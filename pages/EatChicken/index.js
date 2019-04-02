@@ -92,8 +92,8 @@ Page({
     vertical: true, //竖向
     autoplay: false, //自动播放
     circular: true, // 衔接滑动
-    interval: 2000,
-    duration: 500,
+    interval: 200,
+    duration: 10,
     previousMargin: 0,
     nextMargin: 0
   }
