@@ -9,6 +9,7 @@
             </swiper-item>
           </block>
         </swiper>
+        <view>滑动动可以切换视频</view>
         <video-test4 class="video-test4" current="{{current}}" indexNum="{{item.indexNum}}" videoList="{{item.isPlayingArr}}"></video-test4>
       </swiper-item>
     </block>
