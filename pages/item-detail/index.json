@@ -1,9 +1,9 @@
 {
+  "enablePullDownRefresh":false,
+  "navigationBarTitleText": "吃鸡吃鸡",
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "返回",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
-  "navigationStyle":"custom"
-
+  "debug": true
 }
