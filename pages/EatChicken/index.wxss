@@ -10,7 +10,8 @@ page{
   color: rebeccapurple;
 }
 .ad{
-  width: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 .wrap{
  flex: 1;
@@ -40,7 +41,8 @@ page{
 
 }
 .wrap .ad {
-  width: 100%;
+  width: 100% !important;
+  height: 100% !important;
 }
 .scroll-view{
   display: flex;

@@ -4,14 +4,15 @@ Component({
       type: Boolean,
       value: false,
       observer(newVal) {
+        const timer = 800;
         if (newVal && newVal === true) {
           setTimeout(() => {
             this.videoPlay();
-          }, 400);
+          }, timer);
         } else {
           setTimeout(() => {
             this.videoPause();
-          }, 400);
+          }, timer);
         }
       }
     },

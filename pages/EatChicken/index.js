@@ -36,6 +36,7 @@ Page({
     ],
     videoList: [
       {
+        unitIds:['adunit-ba7b8d2fb76d80e4','adunit-38dac77234ec38a6','adunit-c782681025fd6789','adunit-2b5f0084f137824f','adunit-d7b9cbe1fddf121e','adunit-2da8fd1d9f0c14ea','adunit-86f281ad5914e7b0','adunit-771c23e17b7efa7d','adunit-bb0ace5b768d094e','adunit-2e6f87e5411fb62b'],
         indexNum: 0,
         isPlayingArr: [
           {
@@ -50,6 +51,7 @@ Page({
         ]
       },
       {
+        unitIds:['adunit-feda5011874873b6','adunit-158f9ba9d8a17efd','adunit-2ecbbb8d9a9baa6c','adunit-849fa37b6f759659','adunit-81165735c25c8e44','adunit-16e1088ce22e77de','adunit-d76dc13d06dd605b','adunit-8363446d205805bd','adunit-c862f8d245fda077','adunit-af8be95a81757654'],
         indexNum: 1,
         isPlayingArr: [
           {
@@ -64,6 +66,7 @@ Page({
         ]
       },
       {
+        unitIds:['adunit-14b691e5c57844fd','adunit-d503f97c4678ece8','adunit-0748bdcd3c8e330e','adunit-2ebbb9e3dc9b8ed2','adunit-310b6fb5bd90b9c5','adunit-95926c7ca4d99c4f','adunit-7031caf79bae149f','adunit-18387fa54bcceb41','adunit-61bb4c91506b5ed4','adunit-c7af9b39f06ea43b'],
         indexNum: 2,
         isPlayingArr: [
           {
@@ -77,6 +80,7 @@ Page({
         ]
       },
       {
+        unitIds:['adunit-50450502fd2f0ef6','adunit-1c2999c6f39dbb9d','adunit-fe28c90054a9603d','adunit-a683af72afcb3619','adunit-4e8e1cf6a91daa19','adunit-0c1489a95e140458','adunit-6fc8782e10b5557f','adunit-1f78c5e0547aae9a','adunit-e91b1a52893ce4ca','adunit-9176a95211fa8413'],
         indexNum: 3,
         isPlayingArr: [
           {
