@@ -38,6 +38,7 @@ Component({
         type: Number,
         value: 0
       }
+      
   },
   data: {
     // headVideoInfo: {
@@ -64,7 +65,8 @@ Component({
       this.setData({
         videoContext,
         transformNum:0,
-        transformNumChangeFlag:true
+        transformNumChangeFlag:true,
+        autoplay:true
       });
       
     },

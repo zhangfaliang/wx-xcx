@@ -33,6 +33,9 @@ Component({
   },
 
   methods: {
+    initData() {
+      this.onPlay()
+    },
     onPlay(e) {
       let idx = e.detail.index;
       let { videoList } = this.data;

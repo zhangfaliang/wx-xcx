@@ -44,7 +44,7 @@ Page({
               coverUrl:
                 "http://5b0988e595225.cdn.sohucs.com/images/20171113/fbf8aae351cd4049bf8f29ec22b70e96.jpeg",
               videoUrl:
-                "https://d.pcs.baidu.com/file/800eadc8be8d1efef4c073ff772b4e2a?fid=2605574314-250528-635927860940891&rt=pr&sign=FDtAERVC-DCb740ccc5511e5e8fedcff06b081203-sq9uwhvRnz4S4GQtUQ78pTZrS48%3D&expires=8h&chkv=1&chkbd=1&chkpc=&dp-logid=2100964203140174839&dp-callid=0&dstime=1554098701&r=938149758&vip=0"
+              "https://v.geilicdn.com/video/wdsgoods1397000013-731e00000168308294340a207825.mp4.f20.mp4"
             }
           }
         ]
@@ -97,7 +97,7 @@ Page({
     autoplay: false, //自动播放
     circular: true, // 衔接滑动
     interval: 2000,
-    duration: 500,
+    duration: 600,
     previousMargin: 60,
     nextMargin: 60,
     transformNum: 0,
@@ -133,16 +133,13 @@ Page({
     });
   },
   bindtransitionfn(e) {
-    this.debouncedebouce(this.processsSetData, 60)({
-      transformNum: e.detail.dy>580?0:e.detail.dy,
-    });
+  
   },
   bindchangeFn(e) {
    
   },
   bindanimationfinishFn(e) {
-    this.debouncedebouce(this.processsSetData, 60)({
-      transformNum: 0,
+    this.debouncedebouce(this.processsSetData, 0)({
       current: e.detail.current
     });
 

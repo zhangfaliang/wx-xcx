@@ -1,1 +1,1 @@
-<video-test-3 class='video-test3' wx:for="{{videoList}}" current="{{current}}" transformNum="{{transformNum}}" bind:onplay="onPlay" bind:onpause="onPause" indexNum="{{indexNum}}" idx="{{index}}" isplaying="{{item.isPlaying}}" wx:key="index" headVideoInfo="{{item.headVideoInfo}}"></video-test-3>
+<video-test-3 class='video-test3' wx:for="{{videoList}}" current="{{current}}"  bind:onplay="onPlay" bind:onpause="onPause" indexNum="{{indexNum}}" idx="{{index}}" isplaying="{{indexNum===current}}" wx:key="index" headVideoInfo="{{item.headVideoInfo}}"></video-test-3>

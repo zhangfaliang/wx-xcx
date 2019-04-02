@@ -1,13 +1,11 @@
 <view class="video-img--wrap">
-    <!-- <view>{{transformNumChangeFlag&&indexNum==current?transformNum:0}}</view> -->
-    <!-- style="display:{{transformNum==0?'display':'none'}}" -->
-    <!-- style="transform:translateY(-{{indexNum==current?transformNum:0}}px)" -->
-    <video class="video" poster="{{headVideoInfo.coverUrl}}"  src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
-        <cover-view  class="video_view--container" wx:if="{{!play}}">
-            <!-- <cover-image src="{{headVideoInfo.coverUrl}}" class="cover-image" mode="aspectFit"></cover-image> -->
+    <video class="video" poster="{{headVideoInfo.coverUrl}}" src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
+        <cover-view class="video_view--container" wx:if="{{!play}}">
             <cover-view class="control--btn" catch:tap="controlVideo">
-                <cover-image class="cover-image" src="https://si.geilicdn.com/img-4933000001685b263c400a20b7b9-unadjust_100_100.png"></cover-image>
             </cover-view>
         </cover-view>
     </video>
 </view>
+<!-- <cover-image class="cover-image" src="{{headVideoInfo.coverUrl}}"></cover-image> -->
+
+<!-- "https://si.geilicdn.com/img-4933000001685b263c400a20b7b9-unadjust_100_100.png" -->
