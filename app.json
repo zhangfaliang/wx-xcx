@@ -3,8 +3,7 @@
     "pages/EatChicken/index",
     "pages/index/index",
     "pages/item-detail/index",
-    "pages/video-detail/index"
-    
+    "pages/video-detail/index"    
   ],
   "window": {
     "backgroundTextStyle": "light",
