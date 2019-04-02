@@ -1,5 +1,5 @@
 <view class="video-img--wrap">
-    <video class="video" poster="{{headVideoInfo.coverUrl}}" src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
+    <video class="video"  poster="{{headVideoInfo.coverUrl}}" src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
         <cover-view class="video_view--container" wx:if="{{!play}}">
             <cover-view class="control--btn" catch:tap="controlVideo">
             </cover-view>

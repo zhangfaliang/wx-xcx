@@ -1,6 +1,0 @@
-{
-    "component": true,
-    "usingComponents": {
-        "video-test-3": "../video-test-3/index"
-    }
-}
