@@ -12,6 +12,7 @@ page{
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
+ padding: 0 20px;
 }
 .swiper {
   width: 100%;
