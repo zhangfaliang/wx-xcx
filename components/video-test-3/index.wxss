@@ -7,7 +7,7 @@
   display: flex;
   flex: 1;
   position: relative;
-  transition: all 0.05s;
+  /* transition: all 0.1s; */
 
 }
 .to_top{

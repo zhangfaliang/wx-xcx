@@ -127,38 +127,25 @@ Page({
       }
     };
   },
-  processsSetData({ value, key }) {
+  processsSetData(params) {
     this.setData({
-      [key]: value
+      ...params
     });
   },
   bindtransitionfn(e) {
-    // this.debouncedebouce(this.processsSetData, 0)({
-    //   value: e.detail.dy,
-    //   key: "transformNum"
-    // });
-
-    this.setData({
-      transformNum: e.detail.dy
+    this.debouncedebouce(this.processsSetData, 60)({
+      transformNum: e.detail.dy>580?0:e.detail.dy,
     });
   },
   bindchangeFn(e) {
-    this.debouncedebouce(this.processsSetData, 10)({
-      value: e.detail.current,
-      key: "current"
-    });
-    // this.setData({
-    //   current: e.detail.current
-    // });
+   
   },
   bindanimationfinishFn(e) {
-    // this.debouncedebouce(this.processsSetData, 0)({
-    //   value: 0,
-    //   key: "transformNum"
-    // });
-    this.setData({
-      transformNum: 0
+    this.debouncedebouce(this.processsSetData, 60)({
+      transformNum: 0,
+      current: e.detail.current
     });
+
   }
   
 });
