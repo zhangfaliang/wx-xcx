@@ -11,7 +11,7 @@ page{
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
- padding: 0 20px;
+ padding: 0 10px;
 }
 .ad{
   margin:auto;
