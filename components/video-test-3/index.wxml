@@ -1,6 +1,9 @@
 <view class="video-img--wrap">
-    <video class="video" src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
-        <cover-view class="video_view--container" wx:if="{{!play}}">
+    <view>{{ndexNum==current?'display':'none'}}</view>
+    <!-- <view>{{transformNumChangeFlag&&indexNum==current?transformNum:0}}</view> -->
+    <view>{{indexNum+""+current}}</view>
+    <video class="video" style="display:{{transformNumChangeFlag&&indexNum==current?'display':'none'}}" src="{{headVideoInfo.videoUrl}}" custom-cache="{{false}}" bindended="handleVideoEnded" autoplay="{{autoplay}}" controls="true" show-center-play-btn="{{false}}" id="item-head-video" class="video--wrap video-img--ele">
+        <cover-view style="transform:translateY(-{{transformNumChangeFlag&&indexNum==current?transformNum:0}}px)" class="video_view--container" wx:if="{{!play}}">
             <cover-image src="{{headVideoInfo.coverUrl}}" class="cover-image" mode="aspectFit"></cover-image>
             <cover-view class="control--btn" catch:tap="controlVideo">
                 <cover-image class="cover-image" src="https://si.geilicdn.com/img-4933000001685b263c400a20b7b9-unadjust_100_100.png"></cover-image>

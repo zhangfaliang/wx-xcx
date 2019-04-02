@@ -36,6 +36,7 @@ Page({
     ],
     videoList: [
       {
+        indexNum: 0,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -49,6 +50,7 @@ Page({
         ]
       },
       {
+        indexNum: 1,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -62,6 +64,7 @@ Page({
         ]
       },
       {
+        indexNum: 2,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -74,6 +77,7 @@ Page({
         ]
       },
       {
+        indexNum: 3,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -92,10 +96,69 @@ Page({
     vertical: true, //竖向
     autoplay: false, //自动播放
     circular: true, // 衔接滑动
-    interval: 200,
-    duration: 10,
-    previousMargin: 0,
-    nextMargin: 0
+    interval: 2000,
+    duration: 500,
+    previousMargin: 60,
+    nextMargin: 60,
+    transformNum: 0,
+    current: 0
+  },
+  debouncedebouce(func, delay, immediate) {
+    var timer = null;
+    return function() {
+      var context = this;
+      var args = arguments;
+      if (timer) clearTimeout(time);
+      if (immediate) {
+        //根据距离上次触发操作的时间是否到达delay来决定是否要现在执行函数
+        var doNow = !timer;
+        //每一次都重新设置timer，就是要保证每一次执行的至少delay秒后才可以执行
+        timer = setTimeout(function() {
+          timer = null;
+        }, delay);
+        //立即执行
+        if (doNow) {
+          func.apply(context, args);
+        }
+      } else {
+        timer = setTimeout(function() {
+          func.apply(context, args);
+        }, delay);
+      }
+    };
+  },
+  processsSetData({ value, key }) {
+    this.setData({
+      [key]: value
+    });
+  },
+  bindtransitionfn(e) {
+    // this.debouncedebouce(this.processsSetData, 0)({
+    //   value: e.detail.dy,
+    //   key: "transformNum"
+    // });
+
+    this.setData({
+      transformNum: e.detail.dy
+    });
+  },
+  bindchangeFn(e) {
+    this.debouncedebouce(this.processsSetData, 10)({
+      value: e.detail.current,
+      key: "current"
+    });
+    // this.setData({
+    //   current: e.detail.current
+    // });
+  },
+  bindanimationfinishFn(e) {
+    // this.debouncedebouce(this.processsSetData, 0)({
+    //   value: 0,
+    //   key: "transformNum"
+    // });
+    this.setData({
+      transformNum: 0
+    });
   }
   
 });

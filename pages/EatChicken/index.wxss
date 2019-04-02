@@ -5,6 +5,13 @@ page{
   flex-direction: column;
   justify-content: flex-start;
 }
+.view1{
+  font-size: 30PX;
+  color: rebeccapurple;
+}
+.ad{
+  width: 100%;
+}
 .wrap{
  flex: 1;
  display: flex;
@@ -18,6 +25,7 @@ page{
 }
 .swiper .swiper-item{
   height:20%;
+  width: 100%;
 }
 .video-swiper{
   display: flex;
