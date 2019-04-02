@@ -1,6 +1,0 @@
-@import "../../common/util/util.wxss";
-@import "../bind/bind.wxss";
-.bind-code .telphone {
-  flex: 1;
-  color: #ccc;
-}

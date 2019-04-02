@@ -1,9 +1,6 @@
 var config = require('../config/index'),
-    login = require('../../lib/login/dist/index'),
-    base = require('../../lib/base/dist/base'),
-    core = base.core,
+    // login = require('../../lib/login/dist/index'),
     index = require('../index');
-var toast = require('../../lib/toast/dist/toast');
 
 var util = {
     // 5层判断

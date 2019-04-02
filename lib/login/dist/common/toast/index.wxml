@@ -1,7 +1,0 @@
-<block wx:if="{{components.toast.ui.show}}">
-    <view class="ui-toast">
-        <view class="text {{components.toast.ui.className}}">
-            <text>{{components.toast.model.message}}</text>
-        </view>
-    </view>
-</block>

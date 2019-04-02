@@ -26,11 +26,5 @@ config.api = {
     getshoptreasures: 'ares/index.getShopTreasures/1.0',
 };
 
-/**
- * 跳转路径url
- */
-config.url = {
-    webview: '/lib/webview/dist/pages/index/index', // h5页面
-};
 
 module.exports = config;

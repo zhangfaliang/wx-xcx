@@ -1,7 +1,6 @@
 var base = require('../lib/base/dist/base'),
     util = require('./util/index'),
     config = require('./config/index'),
-    login = require('../lib/login/dist/index'),
     helper = require('./helper/index'),
     spider = require('../lib/mina-spider/src/index');
 
@@ -11,7 +10,7 @@ var common = {
     core: base.core,
     date: base.date,
     config: config,
-    login: login,
+    // login: login,
     spider: spider,
 };
 
