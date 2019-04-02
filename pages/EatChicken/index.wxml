@@ -1,5 +1,5 @@
 <view class="wrap">
-  <swiper class="video-swiper" circular="{{circular}}" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper class="video-swiper" skip-hidden-item-layout circular="{{circular}}" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}"  bindanimationfinish="{{bindanimationfinishfn}}"  bindchange="{{bindchangefn}}"  bindtransition="{{bindtransitionfn}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{videoList}}" wx:for-index="index" wx:key="{{item.index}}">
       <swiper-item>
         <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="true" interval="2000" duration="200">

@@ -87,7 +87,7 @@ Page({
         ]
       }
     ],
-    scrollTopNum: 0,
+    hiddenflag: false,
     indicatorDots: false, // 角标按钮
     vertical: true, //竖向
     autoplay: false, //自动播放
@@ -97,4 +97,5 @@ Page({
     previousMargin: 0,
     nextMargin: 0
   }
+  
 });
