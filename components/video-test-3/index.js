@@ -70,7 +70,6 @@ Component({
         videoContext,
         transformNum: 0,
         transformNumChangeFlag: true,
-        autoplay: true
       });
     },
 
