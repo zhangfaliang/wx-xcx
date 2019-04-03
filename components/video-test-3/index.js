@@ -69,7 +69,7 @@ Component({
       this.setData({
         videoContext,
         transformNum: 0,
-        transformNumChangeFlag: true,
+        transformNumChangeFlag: true
       });
     },
 
@@ -91,32 +91,81 @@ Component({
           }
         });
     },
+    delayVideoContext({ videoContext, play, autoplay, key }) {
+      if (this.timer) clearInterval(this.timer);
+      if (!videoContext) {
+        console.log('2------------2')
+        this.timer = setInterval(() => {
+          let videoContext = wx.createVideoContext("item-head-video", this);
 
+          if (videoContext) {
+            console.log('3------------3')
+            this.setData(
+              {
+                videoContext,
+                play,
+                autoplay
+              },
+              () => {
+                clearInterval(this.timer);
+                videoContext[key]();
+              }
+            );
+          }
+        }, 500);
+      } else {
+        console.log('1------------1')
+        clearInterval(this.timer);
+        this.setData(
+          {
+            videoContext,
+            play,
+            autoplay
+          },
+          () => {
+            clearInterval(this.timer);
+            videoContext[key]();
+          }
+        );
+        
+      }
+    },
     videoPlay() {
       const { videoContext } = this.data;
-
-      this.setData(
-        {
-          play: true,
-          autoplay: true
-        },
-        () => {
-          videoContext.play();
-        }
-      );
+      this.delayVideoContext({
+        videoContext,
+        play: true,
+        autoplay: true,
+        key: "play"
+      });
+      // this.setData(
+      //   {
+      //     play: true,
+      //     autoplay: true
+      //   },
+      //   () => {
+      //     videoContext.play();
+      //   }
+      // );
     },
     videoPause() {
       const { videoContext } = this.data;
+      this.delayVideoContext({
+        videoContext,
+        play: false,
+        autoplay: false,
+        key: "pause"
+      });
 
-      this.setData(
-        {
-          play: false,
-          autoplay: false
-        },
-        () => {
-          videoContext.pause();
-        }
-      );
+      // this.setData(
+      //   {
+      //     play: false,
+      //     autoplay: false
+      //   },
+      //   () => {
+      //     videoContext.pause();
+      //   }
+      // );
     },
     controlVideo() {
       const { idx } = this.data;
