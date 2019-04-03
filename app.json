@@ -2,6 +2,7 @@
   "pages": [
     "pages/EatChicken/index",
     "pages/index/index",
+    "pages/EatChicken/index",
     "pages/item-detail/index",
     "pages/video-detail/index"    
   ],
