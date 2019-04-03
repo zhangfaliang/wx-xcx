@@ -4,7 +4,7 @@ Component({
       type: Boolean,
       value: false,
       observer(newVal) {
-        const timer = 800;
+        const timer = 1200;
         if (newVal && newVal === true) {
           setTimeout(() => {
             this.videoPlay();
@@ -91,6 +91,19 @@ Component({
           }
         });
     },
+    processSetData(videoContext, play, autoplay, key) {
+      this.setData(
+        {
+          videoContext,
+          play,
+          autoplay
+        },
+        () => {
+          clearInterval(this.timer);
+          videoContext[key]();
+        }
+      );
+    },
     delayVideoContext({ videoContext, play, autoplay, key }) {
       if (this.timer) clearInterval(this.timer);
       if (!videoContext) {
@@ -98,71 +111,50 @@ Component({
           let videoContext = wx.createVideoContext("item-head-video", this);
 
           if (videoContext) {
-            this.setData(
-              {
-                videoContext,
-                play,
-                autoplay
-              },
-              () => {
-                clearInterval(this.timer);
-                videoContext[key]();
-              }
-            );
+            this.processSetData(videoContext, play, autoplay, key);
           }
         }, 500);
       } else {
         clearInterval(this.timer);
-        this.setData(
-          {
-            videoContext,
-            play,
-            autoplay
-          },
-          () => {
-            clearInterval(this.timer);
-            videoContext[key]();
-          }
-        );
-        
+        this.processSetData(videoContext, play, autoplay, key);
       }
     },
     videoPlay() {
       const { videoContext } = this.data;
-      this.delayVideoContext({
-        videoContext,
-        play: true,
-        autoplay: true,
-        key: "play"
-      });
-      // this.setData(
-      //   {
-      //     play: true,
-      //     autoplay: true
-      //   },
-      //   () => {
-      //     videoContext.play();
-      //   }
-      // );
+      // this.delayVideoContext({
+      //   videoContext,
+      //   play: true,
+      //   autoplay: true,
+      //   key: "play"
+      // });
+      this.setData(
+        {
+          play: true,
+          autoplay: true
+        },
+        () => {
+          videoContext.play();
+        }
+      );
     },
     videoPause() {
       const { videoContext } = this.data;
-      this.delayVideoContext({
-        videoContext,
-        play: false,
-        autoplay: false,
-        key: "pause"
-      });
+      // this.delayVideoContext({
+      //   videoContext,
+      //   play: false,
+      //   autoplay: false,
+      //   key: "pause"
+      // });
 
-      // this.setData(
-      //   {
-      //     play: false,
-      //     autoplay: false
-      //   },
-      //   () => {
-      //     videoContext.pause();
-      //   }
-      // );
+      this.setData(
+        {
+          play: false,
+          autoplay: false
+        },
+        () => {
+          videoContext.pause();
+        }
+      );
     },
     controlVideo() {
       const { idx } = this.data;

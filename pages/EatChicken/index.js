@@ -56,7 +56,7 @@ Page({
               coverUrl:
                 "http://5b0988e595225.cdn.sohucs.com/images/20171113/fbf8aae351cd4049bf8f29ec22b70e96.jpeg",
               videoUrl:
-                "https://tj-download.weiyun.com/ftn_handler/e47084ef9908d49623305d77f1e421480fa52eaeb0be39b808becac971052d5b/shinyzhang%202019-04-04%2014.01.11%20%281%29.mp4?fname=shinyzhang%202019-04-04%2014.01.11%20%281%29.mp4&from=30111&version=3.3.3.3"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2014.01.03.mp4"
             }
           }
         ]
@@ -82,7 +82,7 @@ Page({
               coverUrl:
                 "http://img5.imgtn.bdimg.com/it/u=3159449345,3781131544&fm=27&gp=0.jpg",
               videoUrl:
-                "https://tj-download.weiyun.com/ftn_handler/8c9231cea6eb6cc5dbda58fdb253c36ec57519f6d6b3e5fb4cedaeb30b20531641d749b5ee3e29504c8d89ef7dce9fe98b09ba4d31b2cd61ecb4fbc883f36d56/shinyzhang%202019-04-04%2014.01.11.mp4?fname=shinyzhang%202019-04-04%2014.01.11.mp4&from=30018&version=3.3.3.3"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2014.01.11.mp4"
             }
           }
         ]
@@ -107,7 +107,7 @@ Page({
             headVideoInfo: {
               coverUrl: "http://pic.uzzf.com/up/2017-9/20179259513989.png",
               videoUrl:
-                "https://v.geilicdn.com/video/wdsgoods1397000013-731e00000168308294340a207825.mp4.f20.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2012.20.25.mov"
             }
           }
         ]
@@ -133,7 +133,7 @@ Page({
               coverUrl:
                 "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
               videoUrl:
-                "https://v.geilicdn.com/video/wdsgoods1397000013-731e00000168308294340a207825.mp4.f20.mp4"
+                "https://raw.githubusercontent.com/zhangfaliang/xiaochengxu-shipin/master/1/shinyzhang%202019-04-04%2014.01.03.mp4"
             }
           }
         ]
