@@ -121,40 +121,40 @@ Component({
     },
     videoPlay() {
       const { videoContext } = this.data;
-      // this.delayVideoContext({
-      //   videoContext,
-      //   play: true,
-      //   autoplay: true,
-      //   key: "play"
-      // });
-      this.setData(
-        {
-          play: true,
-          autoplay: true
-        },
-        () => {
-          videoContext.play();
-        }
-      );
+      this.delayVideoContext({
+        videoContext,
+        play: true,
+        autoplay: true,
+        key: "play"
+      });
+      // this.setData(
+      //   {
+      //     play: true,
+      //     autoplay: true
+      //   },
+      //   () => {
+      //     videoContext.play();
+      //   }
+      // );
     },
     videoPause() {
       const { videoContext } = this.data;
-      // this.delayVideoContext({
-      //   videoContext,
-      //   play: false,
-      //   autoplay: false,
-      //   key: "pause"
-      // });
+      this.delayVideoContext({
+        videoContext,
+        play: false,
+        autoplay: false,
+        key: "pause"
+      });
 
-      this.setData(
-        {
-          play: false,
-          autoplay: false
-        },
-        () => {
-          videoContext.pause();
-        }
-      );
+      // this.setData(
+      //   {
+      //     play: false,
+      //     autoplay: false
+      //   },
+      //   () => {
+      //     videoContext.pause();
+      //   }
+      // );
     },
     controlVideo() {
       const { idx } = this.data;

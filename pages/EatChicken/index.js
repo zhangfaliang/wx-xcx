@@ -56,7 +56,7 @@ Page({
               coverUrl:
                 "http://5b0988e595225.cdn.sohucs.com/images/20171113/fbf8aae351cd4049bf8f29ec22b70e96.jpeg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2014.01.03.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/1.mp4"
             }
           }
         ]
@@ -82,7 +82,7 @@ Page({
               coverUrl:
                 "http://img5.imgtn.bdimg.com/it/u=3159449345,3781131544&fm=27&gp=0.jpg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2014.01.11.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/2.mp4"
             }
           }
         ]
@@ -107,7 +107,7 @@ Page({
             headVideoInfo: {
               coverUrl: "http://pic.uzzf.com/up/2017-9/20179259513989.png",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6d58cc9f0b33499c5c7b48167def48e0b108ec6b/1/shinyzhang%202019-04-04%2012.20.25.mov"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/3.mp4"
             }
           }
         ]
@@ -133,7 +133,59 @@ Page({
               coverUrl:
                 "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
               videoUrl:
-                "https://raw.githubusercontent.com/zhangfaliang/xiaochengxu-shipin/master/1/shinyzhang%202019-04-04%2014.01.03.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/1.mp4"
+            }
+          }
+        ]
+      },
+      {
+        unitIds: [
+          "adunit-50450502fd2f0ef6",
+          "adunit-1c2999c6f39dbb9d",
+          "adunit-fe28c90054a9603d",
+          "adunit-a683af72afcb3619",
+          "adunit-4e8e1cf6a91daa19",
+          "adunit-0c1489a95e140458",
+          "adunit-6fc8782e10b5557f",
+          "adunit-1f78c5e0547aae9a",
+          "adunit-e91b1a52893ce4ca",
+          "adunit-9176a95211fa8413"
+        ],
+        indexNum: 3,
+        isPlayingArr: [
+          {
+            isPlaying: false,
+            headVideoInfo: {
+              coverUrl:
+                "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
+              videoUrl:
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/5.mp4"
+            }
+          }
+        ]
+      },
+      {
+        unitIds: [
+          "adunit-50450502fd2f0ef6",
+          "adunit-1c2999c6f39dbb9d",
+          "adunit-fe28c90054a9603d",
+          "adunit-a683af72afcb3619",
+          "adunit-4e8e1cf6a91daa19",
+          "adunit-0c1489a95e140458",
+          "adunit-6fc8782e10b5557f",
+          "adunit-1f78c5e0547aae9a",
+          "adunit-e91b1a52893ce4ca",
+          "adunit-9176a95211fa8413"
+        ],
+        indexNum: 3,
+        isPlayingArr: [
+          {
+            isPlaying: false,
+            headVideoInfo: {
+              coverUrl:
+                "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
+              videoUrl:
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/6.mp4"
             }
           }
         ]
@@ -188,5 +240,3 @@ Page({
     });
   }
 });
-
-
