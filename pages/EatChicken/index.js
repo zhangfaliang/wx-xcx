@@ -56,7 +56,7 @@ Page({
               coverUrl:
                 "http://5b0988e595225.cdn.sohucs.com/images/20171113/fbf8aae351cd4049bf8f29ec22b70e96.jpeg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/1.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/1.mp4"
             }
           }
         ]
@@ -82,7 +82,7 @@ Page({
               coverUrl:
                 "http://img5.imgtn.bdimg.com/it/u=3159449345,3781131544&fm=27&gp=0.jpg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/2.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/2.mp4"
             }
           }
         ]
@@ -107,7 +107,7 @@ Page({
             headVideoInfo: {
               coverUrl: "http://pic.uzzf.com/up/2017-9/20179259513989.png",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/3.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/5.mp4"
             }
           }
         ]
@@ -133,7 +133,7 @@ Page({
               coverUrl:
                 "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/1.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/4.mp4"
             }
           }
         ]
@@ -151,7 +151,7 @@ Page({
           "adunit-e91b1a52893ce4ca",
           "adunit-9176a95211fa8413"
         ],
-        indexNum: 3,
+        indexNum: 4,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -159,7 +159,7 @@ Page({
               coverUrl:
                 "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/5.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/5.mp4"
             }
           }
         ]
@@ -177,7 +177,7 @@ Page({
           "adunit-e91b1a52893ce4ca",
           "adunit-9176a95211fa8413"
         ],
-        indexNum: 3,
+        indexNum: 5,
         isPlayingArr: [
           {
             isPlaying: false,
@@ -185,7 +185,7 @@ Page({
               coverUrl:
                 "http://img.18183.com/uploads/allimg/171107/168-1G10GI353235.jpg",
               videoUrl:
-                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/6e27a77a2fbebac771eef463f959c3d93ad6ce64/1/6.mp4"
+                "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/48477a591f2f316dc26d4a706e94c7b5227fb73a/1/6.mp4"
             }
           }
         ]
@@ -240,3 +240,4 @@ Page({
     });
   }
 });
+

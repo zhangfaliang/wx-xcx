@@ -4,7 +4,7 @@ Component({
       type: Boolean,
       value: false,
       observer(newVal) {
-        const timer = 1200;
+        const timer = 800;
         if (newVal && newVal === true) {
           setTimeout(() => {
             this.videoPlay();
