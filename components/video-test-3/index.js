@@ -94,12 +94,10 @@ Component({
     delayVideoContext({ videoContext, play, autoplay, key }) {
       if (this.timer) clearInterval(this.timer);
       if (!videoContext) {
-        console.log('2------------2')
         this.timer = setInterval(() => {
           let videoContext = wx.createVideoContext("item-head-video", this);
 
           if (videoContext) {
-            console.log('3------------3')
             this.setData(
               {
                 videoContext,
@@ -114,7 +112,6 @@ Component({
           }
         }, 500);
       } else {
-        console.log('1------------1')
         clearInterval(this.timer);
         this.setData(
           {
