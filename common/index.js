@@ -1,5 +1,5 @@
 var pageUrl = {
-  hashStr: "48477a591f2f316dc26d4a706e94c7b5227fb73a",
+  hashStr: "96dfafa6e85e278508bca204cdf6c39591c6264d",
   urlStr: "https://github.com/zhangfaliang/xiaochengxu-shipin/raw/",
   fileStr: "/1/",
   sufFixStr: ".mp4",
