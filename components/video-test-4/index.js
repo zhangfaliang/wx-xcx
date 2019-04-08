@@ -19,6 +19,11 @@ Component({
       // 属性名
       type: Number, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
       value: 0
+    },
+    outputLength: {
+      // 属性名
+      type: Number, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
+      value: 0
     }
   },
   data: {

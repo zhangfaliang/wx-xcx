@@ -42,7 +42,12 @@ Component({
     current: {
       type: Number,
       value: 0
-    }
+    },
+    outputLength: {
+      type: Number,
+      value: 0
+    },
+    
   },
   data: {
     // headVideoInfo: {
